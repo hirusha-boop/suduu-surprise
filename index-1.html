@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#ffe0ec"><title>For My Suduu ❤️</title>
+<style>
+*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Georgia,'Times New Roman',serif;color:#70294c;text-align:center;background:linear-gradient(135deg,#ffe0ec,#eadcff,#fff0f5);overflow-x:hidden}.card{width:min(92%,560px);margin:24px auto;padding:28px 22px;background:#ffffffd9;border:1px solid #fff;border-radius:25px;box-shadow:0 12px 40px #a74c7520;position:relative}.eyebrow{font:12px Arial,sans-serif;letter-spacing:3px;color:#a34c76}h1{font-size:clamp(28px,7vw,42px);margin:12px 0}.soft{color:#a34c76;line-height:1.8}.heart{font-size:76px;display:inline-block;animation:beat 1.2s infinite;cursor:pointer;border:0;background:transparent}@keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.15)}30%{transform:scale(1)}45%{transform:scale(1.1)}}.btn{background:linear-gradient(90deg,#ed72a5,#ad76e8);color:white;border:0;padding:13px 20px;border-radius:30px;font-size:16px;cursor:pointer;margin:8px 4px;box-shadow:0 5px 14px #ba69a533}.letter,.secret{display:none;margin-top:20px;padding:20px;background:#fff3f8;border-radius:18px;line-height:1.9;text-align:left;white-space:pre-line;animation:appear .5s ease}.secret{text-align:center;background:#f5edff}@keyframes appear{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}.divider{color:#d86d9c;margin:22px}.footer{font:13px Arial,sans-serif;color:#a16a87;line-height:1.8;margin-top:24px}.float{position:fixed;bottom:-35px;pointer-events:none;z-index:5;animation:up 6s linear forwards}@keyframes up{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}#surprise{display:none;margin-top:18px}.tiny{font-size:12px;color:#a16a87;margin-top:18px}
+</style></head>
+<body><main class="card"><div class="eyebrow">A LITTLE SURPRISE, MADE WITH LOVE</div><h1>My M.j, My Suduu 💗</h1><p class="soft">And my beautiful Liyaa...<br>This little world is made just for you.</p><button class="heart" onclick="hearts()" aria-label="Send love">❤️</button><h2>Hey, my love 🥺</h2><p class="soft">I know you're not feeling well right now.<br>If I could, I'd be right beside you,<br>holding your hand and making you smile.</p><button class="btn" onclick="toggle('letter')">💌 Open your love letter</button>
+<div class="letter" id="letter">My sweetest Suduu, ❤️
+
+Get well soon, my love. I wish I could be beside you, hold your hand, and take away all your pain. Please take care of yourself. You mean the world to me. ❤️
+
+You don't have to pretend to be strong every moment. Rest when you need to, look after yourself, and remember that you deserve so much love and happiness.
+
+If hugs could heal, I'd send you a million. If kisses could cure, you'd have an endless supply. And if love could reach you through this little screen, I'd send you all of mine.
+
+Get some rest, my princess. One little step at a time. I hope this page makes you smile, even for a second.
+
+Forever sending you love,
+Your person ❤️</div>
+<div class="divider">♡ ───── ♡ ───── ♡</div><button class="btn" onclick="toggle('secret')">🎁 One little secret...</button><div class="secret" id="secret"><h2>You're so special to me 💕</h2><p>No matter how difficult today feels, I hope tomorrow brings you more comfort, more smiles, and more reasons to be happy.</p><p style="font-size:25px">I love you, Suduu ❤️</p><p>You are my favourite notification. 🥹</p></div><button class="btn" onclick="celebrate()">💖 Send me a thousand hearts</button><div id="surprise"><h2>All these hearts are for you! 💗</h2><p>Imagine every single one is a hug from me.</p></div><div class="footer">Made with all my love, just for you. ❤️<br>Get well soon, my M.j.</div><div class="tiny">A little reminder: please rest and take good care of yourself. 💗</div></main>
+<script>
+function toggle(id){const el=document.getElementById(id);el.style.display=el.style.display==='block'?'none':'block';if(el.style.display==='block'){el.scrollIntoView({behavior:'smooth',block:'nearest'});hearts()}}
+function hearts(){const symbols=['❤️','💕','💗','💖','💘','💜'];for(let i=0;i<12;i++){const h=document.createElement('span');h.className='float';h.textContent=symbols[Math.floor(Math.random()*symbols.length)];h.style.left=Math.random()*100+'vw';h.style.fontSize=(18+Math.random()*22)+'px';h.style.animationDuration=(4+Math.random()*4)+'s';document.body.appendChild(h);h.addEventListener('animationend',()=>h.remove())}}
+function celebrate(){document.getElementById('surprise').style.display='block';hearts();setTimeout(hearts,500);setTimeout(hearts,1000)}
+setInterval(()=>{if(Math.random()>.45)hearts()},6500);
+</script></body></html>
