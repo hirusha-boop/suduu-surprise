@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For My Suduu ❤️</title>
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;min-height:100vh;padding:24px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:Georgia,serif;color:#71334e;
+  background:linear-gradient(135deg,#ffe1eb,#fff1dc,#f8d6ef);
+  overflow-x:hidden
+}
+.card{
+  max-width:480px;width:100%;padding:32px 24px;
+  text-align:center;background:#ffffffd9;
+  border:1px solid white;border-radius:28px;
+  box-shadow:0 15px 55px #b54f7b30
+}
+.heart{font-size:58px;animation:beat 1s infinite}
+h1{color:#c04476;font-size:32px}
+p{font-size:17px;line-height:1.8}
+button{
+  border:0;border-radius:30px;padding:14px 23px;
+  background:#d84e86;color:white;font-size:16px;
+  cursor:pointer;margin:8px
+}
+.note{display:none;background:#fff0f5;border-radius:18px;padding:18px;margin-top:20px}
+.small{font-size:13px;color:#9d627b}
+@keyframes beat{50%{transform:scale(1.15)}}
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="heart">❤️</div>
+  <p>For my M.j, my Suduu, my Liyaa 💗</p>
+  <h1>Get well soon, my love 🥺</h1>
+  <p>
+    I wish I could be beside you, hold your hand,
+    and take away all your pain. Please take care
+    of yourself. You mean the world to me. ❤️
+  </p>
+  <button onclick="showLove()">Open your little surprise 💌</button>
+  <div class="note" id="note">
+    <h2>My sweetest Suduu 🌷</h2>
+    <p>
+      If hugs could heal, I'd send you a million.
+      If love could bring a smile to your face,
+      I'd give you all the love in my heart.
+    </p>
+    <p>Rest well, my princess. Take your time to heal.
+    You are so precious to me. 🫶</p>
+    <div style="font-size:32px">🌸 💗 🧸 🌷</div>
+    <p>I love you, my Suduu. Always. ❤️</p>
+  </div>
+  <p class="small">A little reminder that someone loves you so much. 💕</p>
+</main>
+<script>
+function showLove(){
+  document.getElementById('note').style.display='block';
+}
+</script>
+</body>
+</html>
